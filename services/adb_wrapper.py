@@ -60,6 +60,13 @@ class AdbWrapper:
         Download a file from the device to the local system.
         """
         return self._run(["-s", serial, "pull", remote, local])
+
+    def install(self, serial, apk_path):
+        """
+        Install an APK onto the target device.
+        :param apk_path: Absolute path to the .apk file on host.
+        """
+        return self._run(["-s", serial, "install", "-r", apk_path], timeout=60)
         
     def shell(self, serial, command):
         """

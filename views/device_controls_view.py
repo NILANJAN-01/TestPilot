@@ -1,7 +1,8 @@
 from PySide6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, 
                                QPushButton, QLabel, QFrame, QScrollArea, 
                                QLineEdit, QListWidget, QComboBox, QCheckBox, 
-                               QInputDialog, QDialog, QDialogButtonBox, QFormLayout)
+                               QInputDialog, QDialog, QDialogButtonBox, QFormLayout,
+                               QFileDialog, QTextEdit)
 from PySide6.QtCore import Qt, QSize
 from .base_view import BaseView
 from core.context import get_context
@@ -32,6 +33,7 @@ class DeviceControlsView(BaseView):
         # Build Sections directly into main_layout (Row-wise stack)
         self._build_media_section()
         self._build_connectivity_section()
+        self._build_apk_installer_section()
         self._build_app_section()
         self._build_power_section()
         self._build_input_section()
@@ -389,12 +391,119 @@ class DeviceControlsView(BaseView):
         self.bt_toggle.setChecked(states["bt"])
         self.bt_toggle.blockSignals(False)
 
+    def _build_apk_installer_section(self):
+        """
+        Premium APK installer section with multi-file support and live console feedback.
+        """
+        layout = self._create_section_frame("Batch APK Installer", self.main_layout)
+        
+        info = QLabel("Drop or select multiple APKs to install them sequentially on the connected device.")
+        info.setStyleSheet("color: #888; font-size: 11px; margin-bottom: 8px;")
+        layout.addWidget(info)
+
+        btn_row = QHBoxLayout()
+        self.btn_install = QPushButton(" Select & Install APKs")
+        self.btn_install.setIcon(get_icon("fa5s.file-upload", "#FFF"))
+        self.btn_install.setStyleSheet("""
+            QPushButton {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #40E0D0, stop:1 #008080);
+                color: #000; font-weight: bold; padding: 12px; border-radius: 6px; font-size: 13px;
+            }
+            QPushButton:hover { background: #40E0D0; }
+            QPushButton:disabled { background: #333; color: #666; }
+        """)
+        self.btn_install.clicked.connect(self._select_and_install_apks)
+        btn_row.addWidget(self.btn_install)
+        
+        btn_clear = QPushButton("Clear Console")
+        btn_clear.setFixedWidth(120)
+        btn_clear.setStyleSheet("background: #222; color: #888; border: 1px solid #444; padding: 8px; border-radius: 4px;")
+        btn_clear.clicked.connect(lambda: self.install_console.clear())
+        btn_row.addWidget(btn_clear)
+        layout.addLayout(btn_row)
+
+        # Installation Console
+        self.install_console = QTextEdit()
+        self.install_console.setReadOnly(True)
+        self.install_console.setFixedHeight(120)
+        self.install_console.setPlaceholderText("Installation logs will appear here...")
+        self.install_console.setStyleSheet("""
+            QTextEdit {
+                background-color: #000;
+                color: #00FF00;
+                font-family: 'Consolas', 'Courier New', monospace;
+                font-size: 12px;
+                border: 1px solid #333;
+                border-radius: 4px;
+                padding: 10px;
+            }
+        """)
+        layout.addWidget(self.install_console)
+
+    def _select_and_install_apks(self):
+        serial = self._get_serial()
+        if not serial:
+            self.device_manager.notification.emit("Please connect a device first!", "error")
+            return
+
+        files, _ = QFileDialog.getOpenFileNames(
+            self, "Select APKs to Install", "", "Android Package (*.apk)"
+        )
+        
+        if not files:
+            return
+
+        self.btn_install.setEnabled(False)
+        self.install_console.append(f"<span style='color: #40E0D0;'>[SYSTEM] Starting batch installation of {len(files)} apps...</span>")
+        
+        # Sequentially install via worker
+        def install_job(s, paths):
+            results = []
+            for path in paths:
+                filename = os.path.basename(path)
+                self.install_console.append(f"<span style='color: #888;'>Installing: {filename}...</span>")
+                out, err, code = self.device_manager.adb.install(s, path)
+                success = code == 0
+                results.append((filename, success, out or err))
+            return results
+
+        # Since we want to update console live, we could use signals from worker or just do 1 by 1
+        # For better UX, let's do recursive worker calls or just update after each
+        self._install_sequentially(serial, files)
+
+    def _install_sequentially(self, serial, paths):
+        if not paths:
+            self.btn_install.setEnabled(True)
+            self.install_console.append("<span style='color: #40E0D0;'>[SUCCESS] All tasks completed.</span>")
+            return
+
+        current_path = paths[0]
+        filename = os.path.basename(current_path)
+        
+        self.install_console.append(f"⏳ Processing: <b>{filename}</b>")
+        
+        worker = Worker(self.device_manager.adb.install, serial, current_path)
+        worker.signals.result.connect(lambda res, p=paths[1:]: self._on_install_item_finished(res, filename, serial, p))
+        self.device_manager.thread_pool.start(worker)
+
+    def _on_install_item_finished(self, result, filename, serial, remaining):
+        out, err, code = result
+        if code == 0:
+            self.install_console.append(f"<span style='color: #00FF00;'>✅ SUCCESS:</span> {filename}")
+        else:
+            self.install_console.append(f"<span style='color: #FF5252;'>❌ FAILED:</span> {filename} | {err or out}")
+        
+        # Auto scroll to bottom
+        self.install_console.verticalScrollBar().setValue(self.install_console.verticalScrollBar().maximum())
+        
+        # Process next
+        self._install_sequentially(serial, remaining)
+
     # App
     def _launch_home(self): self._run_async(self.device_manager.controller.launch_home)
     def _force_stop(self): self._run_async(self.device_manager.controller.force_stop, self.pkg_input.text())
     def _clear_data(self): self._run_async(self.device_manager.controller.clear_data, self.pkg_input.text())
 
-    # Power
     def _power_btn(self): self._run_async(self.device_manager.controller.power_btn)
     def _reboot(self): self._run_async(self.device_manager.controller.reboot)
     def _input_key(self, code): self._run_async(lambda s: self.device_manager.controller._exec(s, f"input keyevent {code}"))
