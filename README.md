@@ -30,8 +30,18 @@ A professional-grade desktop tool for **Android Automotive OS (AAOS)** and stand
 - `docs/`: Comprehensive **HLD** and **User Guide**.
 
 ## 🛠️ Build & Installation
-- **Windows**: Use `python build_executable.py` to generate a portable EXE.
-- **Linux**: Distributed as a binary (requires `android-tools`).
+
+### Windows
+- Run `python build_executable.py`
+- Output: `dist/TestPilot.exe`
+
+### Linux (Ubuntu/Debian)
+- Run `bash scripts/setup_linux.sh`
+- This script automatically installs `adb`, `scrcpy`, and builds the standalone binary.
+- Output: `dist/TestPilot`
+
+### 🤖 CI/CD (Auto-Builds)
+TestPilot is configured with **GitHub Actions**. Every time you push code to the `main` branch, it automatically builds binaries for both Windows and Linux. You can find these in the **Actions** tab of your repository.
 
 ---
 Developed by NILANJAN-01
