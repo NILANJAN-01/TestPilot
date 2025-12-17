@@ -4,7 +4,11 @@ import qtawesome as qta
 from utils import get_icon
 
 class Sidebar(QWidget):
-    # Signal emiting the index of the selected page
+    """
+    Primary navigation component for TestPilot.
+    Handles page switching via signals and manages active button states with neon styling.
+    """
+    # Signal emitting the index of the selected page
     page_selected = Signal(int)
 
     def __init__(self):

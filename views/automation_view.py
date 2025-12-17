@@ -11,6 +11,11 @@ from core.context import get_context
 from utils import get_icon
 
 class AutomationView(BaseView):
+    """
+    Control hub for automated test suites.
+    Allows selection and execution of TMX (Test Management eXchange) suites
+    and provides navigation to advanced stability stress tests.
+    """
     def __init__(self):
         super().__init__("Test Automation")
         self.ctx = get_context()

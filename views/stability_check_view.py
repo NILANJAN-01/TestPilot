@@ -7,6 +7,11 @@ from core.context import get_context
 from utils import get_icon
 
 class StabilityCheckView(BaseView):
+    """
+    Stress-testing hub for application stability.
+    Allows point-and-click selection of target activities to loop 
+    while monitoring for Fatal Crashes and ANRs.
+    """
     def __init__(self):
         super().__init__("System Stability Check")
         self.ctx = get_context()

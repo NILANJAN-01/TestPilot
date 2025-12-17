@@ -6,6 +6,11 @@ from core.context import get_context
 from utils import get_icon
 
 class RemoteControlView(BaseView):
+    """
+    User interface for interactive device mirroring.
+    Integrates with RemoteControlService to launch scrcpy with optimized AAOS settings.
+    Handles dynamic state transitions (Mirroring vs Idle).
+    """
     def __init__(self):
         super().__init__("Remote Control")
         self.ctx = get_context()

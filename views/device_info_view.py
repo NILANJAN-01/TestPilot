@@ -5,6 +5,11 @@ from core.context import get_context
 from PySide6.QtCore import Qt
 
 class DeviceInfoView(BaseView):
+    """
+    Overview page for connected Android hardware.
+    Displays deep-gathered properties categorized into logical sections.
+    Automatically refreshes when device state changes via async workers.
+    """
     def __init__(self):
         super().__init__("Device Information")
         

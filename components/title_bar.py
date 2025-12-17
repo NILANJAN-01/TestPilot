@@ -4,6 +4,10 @@ import qtawesome as qta
 from utils import get_icon
 
 class TitleBar(QWidget):
+    """
+    Custom frameless title bar.
+    Provides window dragging, min/max/close controls, and global system status triggers.
+    """
     def __init__(self, parent_window):
         super().__init__()
         self.parent_window = parent_window
@@ -17,8 +21,8 @@ class TitleBar(QWidget):
         self.icon_label = QLabel()
         self.icon_label.setPixmap(get_icon("fa5s.car", color="#40E0D0").pixmap(24, 24)) 
 
-        from core.config import VERSION
-        self.title_label = QLabel(f"TestAssistMAX {VERSION}")
+        from core.config import APP_NAME, VERSION
+        self.title_label = QLabel(f"{APP_NAME} {VERSION}")
         self.title_label.setObjectName("TitleLabel")
 
         # ADB Root Toggle
