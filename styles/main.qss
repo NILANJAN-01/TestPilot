@@ -1,0 +1,154 @@
+/* Global Theme: Futuristic Dark Neon (High Contrast, Easy on Eyes) */
+QWidget {
+    background-color: #121212; /* Material Dark Background (not pitch black) */
+    color: #E0E0E0; /* High legibility off-white */
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Sidebar styling */
+QWidget#Sidebar {
+    background-color: #1E1E1E; /* Lighter dark for separation */
+    border-right: 1px solid #333333;
+}
+
+QPushButton#SidebarButton {
+    background-color: transparent;
+    color: #AAAAAA;
+    text-align: left;
+    padding: 16px 24px;
+    border: none;
+    border-left: 3px solid transparent;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+QPushButton#SidebarButton:hover {
+    background-color: rgba(64, 224, 208, 0.08); /* Turquoise/Cyan tint */
+    color: #40E0D0; /* Turquoise Neon */
+}
+
+QPushButton#SidebarButton:checked {
+    background-color: rgba(64, 224, 208, 0.15);
+    color: #40E0D0;
+    border-left: 3px solid #40E0D0;
+    font-weight: bold;
+    /* Glow text effect simulation via shadow if possible, else rely on color */
+}
+
+/* Header/Title Bar */
+QWidget#TitleBar {
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #333333;
+}
+
+QLabel#TitleLabel {
+    color: #40E0D0; /* Turquoise Neon Title */
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Content Area */
+QWidget#ContentArea {
+    background-color: #121212;
+}
+
+QLabel {
+    color: #E0E0E0;
+}
+
+/* Cards */
+QFrame#Card {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+
+QFrame#Card:hover {
+    border: 1px solid #40E0D0; /* Neon interaction */
+}
+
+QLabel#CardTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QLabel#CardValue {
+    font-size: 26px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+/* Primary/Action Buttons */
+QPushButton[class="PrimaryButton"] {
+    background-color: rgba(64, 224, 208, 0.1); /* Glassy Dark Cyan */
+    color: #40E0D0;
+    border: 1px solid #40E0D0;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+QPushButton[class="PrimaryButton"]:hover {
+    background-color: #40E0D0;
+    color: #121212; /* Black text on neon background for contrast */
+    box-shadow: 0 0 15px #40E0D0;
+}
+
+QPushButton[class="PrimaryButton"]:pressed {
+    background-color: #20B2AA; /* Darker Cyan */
+    color: #121212;
+}
+
+/* Window Control Buttons */
+QPushButton#WindowControlBtn {
+    background-color: transparent;
+    border: none;
+    color: #888888;
+    border-radius: 4px;
+}
+QPushButton#WindowControlBtn:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+QPushButton#CloseBtn:hover {
+    background-color: #FF5252;
+    color: white;
+}
+
+/* List Widget (Automation) */
+QListWidget {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    color: #E0E0E0;
+    outline: none;
+}
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #2C2C2C;
+}
+QListWidget::item:selected {
+    background-color: rgba(64, 224, 208, 0.15);
+    border-left: 3px solid #40E0D0;
+    color: #FFFFFF;
+}
+
+/* Terminal/Logs */
+QTextEdit {
+    background-color: #000000; /* Pure black for terminal contrast */
+    border: 1px solid #333333;
+    color: #00FF00; /* Classic Hacker Green or could be Cyan */
+    font-family: 'Consolas', monospace;
+    font-size: 13px;
+    padding: 5px;
+}

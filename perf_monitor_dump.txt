@@ -1,0 +1,681 @@
+--- 2025-12-18 00:30:53 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7276775,7276775
+oom,native,1122308,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:30:56 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7280275,7280275
+oom,native,1117880,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:00 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7283526,7283526
+oom,native,1123404,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:03 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7286801,7286801
+oom,native,1117900,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:06 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7290045,7290045
+oom,native,1123572,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:09 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7293333,7293333
+oom,native,1118964,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:13 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7296601,7296601
+oom,native,1123596,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:31:16 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7299903,7299903
+oom,native,1118992,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:32:46 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7389608,7389608
+oom,native,1123524,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:32:49 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7392867,7392867
+oom,native,1119060,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:32:52 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7396116,7396116
+oom,native,1122544,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:32:55 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7399403,7399403
+oom,native,1119088,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:32:59 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7402684,7402684
+oom,native,1122656,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:02 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7405959,7405959
+oom,native,1118092,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:16 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7420204,7420204
+oom,native,1123540,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:19 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7423505,7423505
+oom,native,1119964,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:23 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7426762,7426762
+oom,native,1123484,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:26 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7430191,7430191
+oom,native,1118960,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:30 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7433469,7433469
+oom,native,1122540,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:33 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7436928,7436928
+oom,native,1118996,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:36 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7440421,7440421
+oom,native,1122632,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:40 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7443746,7443746
+oom,native,1119024,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:43 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7447107,7447107
+oom,native,1122504,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:46 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7450464,7450464
+oom,native,1119060,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:50 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7453773,7453773
+oom,native,1122696,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:53 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7457097,7457097
+oom,native,1118064,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:33:57 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7460440,7460441
+oom,native,1122552,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:00 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7463789,7463789
+oom,native,1118104,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:03 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7467094,7467094
+oom,native,1122748,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:06 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7470423,7470423
+oom,native,1118132,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:10 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7473769,7473769
+oom,native,1123688,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:13 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7477093,7477093
+oom,native,1118164,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:16 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7480375,7480375
+oom,native,1123676,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:20 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7483687,7483687
+oom,native,1119224,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:23 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7486991,7486991
+oom,native,1122220,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:26 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7490477,7490477
+oom,native,1117708,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:30 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7493757,7493757
+oom,native,1122144,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:33 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7497058,7497058
+oom,native,1117748,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:36 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7500367,7500367
+oom,native,1123428,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:40 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7503705,7503706
+oom,native,1117780,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:43 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7506979,7506979
+oom,native,1122292,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:46 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7510274,7510274
+oom,native,1118840,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:50 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7513562,7513562
+oom,native,1122324,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:53 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7516893,7516894
+oom,native,1117840,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:56 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7520202,7520202
+oom,native,1123336,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:34:59 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7523495,7523495
+oom,native,1118896,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:03 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7526780,7526780
+oom,native,1123420,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:06 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7530081,7530081
+oom,native,1117900,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:09 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7533393,7533393
+oom,native,1123536,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:13 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7536693,7536693
+oom,native,1117940,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:16 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7539995,7539996
+oom,native,1124504,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:19 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7543320,7543320
+oom,native,1117952,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:23 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7546676,7546676
+oom,native,1122544,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:26 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7549990,7549990
+oom,native,1118004,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:30 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7553308,7553308
+oom,native,1122552,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:33 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7556903,7556903
+oom,native,1119084,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:36 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7560188,7560188
+oom,native,1123572,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:40 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7563515,7563515
+oom,native,1119104,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:43 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7566874,7566874
+oom,native,1122764,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:46 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7570198,7570198
+oom,native,1119136,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:35:50 ---
+Thermal: temperature: 250
+CPU Raw:
+
+Mem Raw:
+version,1
+time,7573495,7573495
+oom,native,1122684,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+
+--- 2025-12-18 00:38:22 ---
+Thermal: temperature: 250
+Memory Raw: version,1
+time,7725678,7725678
+oom,native,1122852,N/A
+proc,native,init,1,12584,N/A,e
+proc,native,ini
+CPU Raw:
+
+
