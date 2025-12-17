@@ -21,14 +21,20 @@ class AdbWrapper:
         """
         try:
             cmd = [self.adb_path] + args
-            result = subprocess.run(
-                cmd, 
-                capture_output=True, 
-                text=True, 
-                timeout=timeout,
-                encoding='utf-8',
-                errors='replace' 
-            )
+            
+            # Windows specific: suppress console flash and improve stability in GUI
+            kwargs = {
+                "capture_output": True,
+                "text": True,
+                "timeout": timeout,
+                "encoding": 'utf-8',
+                "errors": 'replace'
+            }
+            if sys.platform == "win32":
+                import subprocess
+                kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+
+            result = subprocess.run(cmd, **kwargs)
             return result.stdout.strip(), result.stderr.strip(), result.returncode
         except Exception as e:
             return "", str(e), -1

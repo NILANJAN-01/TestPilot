@@ -16,10 +16,12 @@ class MainWindow(QMainWindow):
         
         # Frameless Window Setup
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
-        self.setAttribute(Qt.WA_TranslucentBackground) # Optional, strictly not needed if we paint background
+        # self.setAttribute(Qt.WA_TranslucentBackground) # Removed as it causes rendering issues on some systems
 
         # Central Widget & Main Layout
         central_widget = QWidget()
+        central_widget.setObjectName("CentralWidget")
+        central_widget.setStyleSheet("background-color: #121212;") # Force solid background
         self.setCentralWidget(central_widget)
         
         # Main Layout (Vertical: TitleBar + ContentBody)
